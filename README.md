@@ -1,5 +1,5 @@
 # Document Classification and OCR Project
----
+
 
 >  ## Overview
 
@@ -33,28 +33,12 @@ Before you begin, make sure you meet the following software and hardware require
 
 > # Web Deployment
 
-To deploy the model and make it accessible over the internet, we have utilized Flask, a lightweight web application framework for Python, and ngrok, a tool that enables us to expose a local web server to the internet.
+To make our model available on the internet, we've employed :
 
-## Deployment Steps
-
-1. **Flask**: We've developed a web application using Flask to serve the document processing model.
+1. **Flask**: to serve the document processing model.
 
 2. **ngrok**: To make the Flask web application accessible over the internet, we use ngrok. Ngrok allows us to expose a local server to a public URL, making it easy to share and access the application.
 
-Here's a brief overview of how to deploy the model using Flask and ngrok:
-
-```bash
-# Install Flask (if not already installed)
-pip install Flask
-
-# Install ngrok (if not already installed)
-# You can find installation instructions at: https://ngrok.com/download
-
-# Run your Flask application
-python app.py
-
-# Expose your local Flask app to the internet using ngrok
-ngrok http 5000
 
 
 
