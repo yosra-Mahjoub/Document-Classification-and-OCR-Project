@@ -18,3 +18,23 @@ In the second phase, we implement OCR technology to convert scanned document ima
 
 The final phase focuses on identifying and extracting key information entities from the documents. By recognizing specific data points, such as names, dates, addresses, and more, we can automatically gather and store crucial information from the documents. This process simplifies data entry and retrieval for various applications.
 
+
+---
+
+# Requirements
+
+Before you begin, make sure you meet the following software and hardware requirements to run this project effectively:
+
+## Software Requirements
+
+- **Python**: We recommend using Python 3.7 or higher.
+
+- **Python Libraries**: 
+
+- **Transformers**:  We recommend using transformers==4.28.0.
+
+- **EasyOCR**: Ensure that you have EasyOCR installed for the OCR phase;
+
+
+
+
