@@ -19,6 +19,14 @@ In the second phase, we implement OCR technology to convert scanned document ima
 
 The final phase focuses on identifying and extracting key information entities from the documents. By recognizing specific data points, such as names, dates, addresses, and more, we can automatically gather and store crucial information from the documents. This process simplifies data entry and retrieval for various applications.
 
+>  ## Data
+
+For training the document processing and information extraction model, we utilized the following datasets:
+
+1. **SROIE (Scanned Receipt OCR and Information Extraction)**: The SROIE dataset is a valuable resource for text recognition from structured and semi-structured scanned receipts. It was created for the SROIE competition held during the ICDAR conference in 2019. This dataset comprises 1000 images, each of which is accompanied by annotations specifying the information to be extracted from the receipt.
+
+2. **FUNSD (Form Understanding in Noisy Scanned Documents)**: The FUNSD dataset is designed for form understanding, optical character recognition, and spatial layout analysis. It consists of 199 fully annotated, noisy scanned forms, each represented as a list of interconnected semantic entities, with information about words, labels, and coordinates.
+
 >  ## Requirements
 
 Before you begin, make sure you meet the following software and hardware requirements to run this project effectively:
@@ -31,7 +39,7 @@ Before you begin, make sure you meet the following software and hardware require
 
 - **EasyOCR**: Ensure that you have EasyOCR installed for the OCR phase;
 
-> # Web Deployment
+> ## Web Deployment
 
 To make our model available on the internet, we've employed :
 
