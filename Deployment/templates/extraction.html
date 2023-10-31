@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block title %} Billing {% endblock title %}
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+  <div class="container-fluid py-4">
+
+    
+
+    <div class="row">
+      <div class="col-md-7 mt-4">
+        <div class="card">
+          <div class="card-header pb-0 px-3">
+            <h6 class="mb-0">{{message}}</h6>
+          </div>
+       <div class="card-body pt-4 p-3" style="text-align: center;">
+    <img src="{{ image_path }}" alt="Image" style="max-width: 100%; max-height: 500px;">
+</div>
+
+        </div>
+      </div>
+      <div class="col-md-5 mt-4">
+        <div class="card h-100 mb-4">
+          <div class="card-header pb-0 px-3">
+            <div class="row">
+              <div class="col-6 d-flex align-items-center">
+                <h6 class="mb-0">Le contenu</h6>
+              </div>
+              <div class="col-6 text-end">
+                <a href="/ident"><button type="submit" class="btn btn-outline-primary btn-sm mb-0 mr-auto">Identifier les entités </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-body pt-4 p-3">
+            
+            <ul class="list-group"> 
+              {% for item in text[:5] %}
+              <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
+                <div class="d-flex flex-column">
+                  <h6 class="mb-1 text-dark font-weight-bold text-sm">{{item}}</h6>
+                  <span class="text-xs">Confidence: {{ conf[loop.index0] }}</span>
+                </div>
+                
+              </li>
+              {% endfor %}
+            </ul>
+            <div class="text-center">
+              <a class=" center btn bg-gradient-dark mb-0 mt-3 " href="javascript:;">Voir plus</a>
+            </div> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include "footer.html" %}
+
+  </div>
+
+{% endblock content %}
+
+<!-- Specific JS goes HERE --> 
+{% block javascripts %}{% endblock javascripts %}
